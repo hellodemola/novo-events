@@ -1,23 +1,30 @@
 import type { NextPage } from 'next';
+import { EventForm } from '../component/forms';
 
 const Home: NextPage = () => (
-  <div className="grid content-center h-screen border">
+  <div className="p-4 flex-col items-center flex border">
+
     <div className="flex justify-center text-center">
       <div>
-        <h1 className="leading-normal text-2xl">NextJs Boilerplate project</h1>
-        <h2 className="text-5xl font-bold leading-relaxed">Tailwind & TypeScript</h2>
-        <h3 className="tracking-wider font-light leading-normal">
-          by
-          {' '}
-          <a href="https://github.com/hellodemola/" className="underline italic" target="_blank" rel="noopener noreferrer">hellodemola</a>
-        </h3>
-        <div className="m-8">
-          <a href="https://github.com/hellodemola/nextjs-base-tailwind-ts.git" className="underline text-red-900">
-            Repo
-          </a>
+        <div className="justify-center flex">
+          <img
+            src="/novo_nordisk_icon.png"
+            alt="novo_nordisk_logo"
+            width="100em"
+          />
         </div>
+
       </div>
     </div>
+    <div className="lg:w-2/6 py-8 px-4">
+      {/* label */}
+      <h1 className="text-xl text-[500]">Attendance form</h1>
+      <p className="font-gray">Enter your details to register for this event.</p>
+      <div className="my-5">
+        <EventForm />
+      </div>
+    </div>
+
   </div>
 );
 

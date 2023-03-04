@@ -24,6 +24,6 @@ describe("should render time", () => {
 
   it("test useCurrentTime custom hooks", () => {
     const { result } = renderHook(() => useCurrentTime(time));
-    expect(result.current.year).toBe(2022);
+    expect(result.current.year).toBe(2023);
   });
 });

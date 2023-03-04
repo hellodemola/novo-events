@@ -108,6 +108,11 @@
   margin-left: 0.5rem;
 }
 
+.sigCanvas {
+  border: 1px solid black;
+  background: 'red';
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
