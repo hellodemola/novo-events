@@ -12,7 +12,7 @@ const EventForm = () => {
     reValidateMode: 'onChange',
   });
   const handleSaveSign = () => {
-    setValue('signature', sigCanvas.current.getTrimmedCanvas().toDataURL('image/png'));
+    setValue('signature', sigCanvas.current.getTrimmedCanvas().toDataURL('image/webp'));
   };
   const handleClear = () => {
     setValue('signature', '');
